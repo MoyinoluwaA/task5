@@ -260,6 +260,8 @@ button {
     }
 
     .box {
+        width: 80%;
+        margin: 0 auto;
         height: 300px;
     }
 
@@ -320,6 +322,7 @@ button {
 
     .box {
         height: 300px;
+        width: 90%;
     }
 
     .main form {
@@ -342,9 +345,13 @@ button {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .formDiv {
         width: 400px;
+    }
+
+    .box {
+        width: 100%;
     }
 }
 
