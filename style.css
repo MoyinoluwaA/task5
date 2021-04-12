@@ -357,6 +357,10 @@ button {
         font-size: 10px;
     }
 
+    .box {
+        display: none;
+    }
+
     .move {
         font-size: 16px;
     }
