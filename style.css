@@ -1,0 +1,391 @@
+body {
+    background-image: url('./Images/bgtokyo.jpg');
+    background-size: cover;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Quicksand';
+    color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    background-color: rgba(0,0,0, 0.7);
+    height: 100%;
+    padding-bottom: 3em;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.toggle {
+    display: none;
+}
+
+.brand {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    position: relative;
+    padding:0 20px 0 100px;
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.brand p {
+    display: inline-block;
+}
+
+.move {
+    margin: 10px 0 5px 10px;
+    font-size: 28px;
+    display: inline;
+}
+
+.brand img {
+    position: absolute;
+    left: 20px;
+    top: -20px;
+}
+
+.brand p:first-of-type {
+    text-transform: uppercase;
+}
+
+.block {
+    display: block;
+}
+
+.dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.login {
+    padding: 7px 20px;
+    border: 3px solid #3592CE;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    width: 88%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.main section {
+    width: 52%;
+}
+
+.left h1 {
+    font-size: 58px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.left p {
+    font-size: 24px;
+    line-height: 1.5em;
+    text-transform: capitalize;
+}
+
+.left p:last-of-type {
+    text-align: center;
+}
+
+.main form {
+    width: 37%;
+}
+
+.box {
+    margin: 1em 0;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+}
+
+form {
+    font-size: 22px;
+}
+
+form p {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 3em;
+}
+
+form i {
+    margin-right: 7px;
+}
+
+input {
+    display: block;
+    margin: 10px 0 25px;
+    width: 100%;
+    font-size: 22px;
+    padding: 8px 1em;
+    border-radius: 10px;
+    border: none;
+}
+
+.link {
+    color: #3592CE;
+}
+
+.buttonDiv {
+    text-align: center;
+}
+
+button {
+    padding: 12px 30px 15px;
+    font-size: 22px;
+    background-color:#237EB9;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 7px;
+    margin: 10px 0;
+    border: none;
+}
+
+.small {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .brand {
+        font-size: 14px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .move {
+        font-size: 16px;
+        margin-top: 2px;
+    }
+
+    .main {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav i {
+        font-size: 26px !important;
+    }
+
+    .brand {
+        display: block;
+        font-size: 8px;
+        margin: 0 auto;
+        padding: 0 10px 0 50px;
+        border-radius: 5px;
+    }
+
+    .dot {
+        width: 4px;
+        height: 4px;
+    }
+
+    .brand img {
+        width: 30px;
+        left: 10px;
+        top: -7px;
+       
+    }
+
+    .toggle {
+        display: inline;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        padding-left: 0;
+    }
+
+    .toggle-show {
+        display: block;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links li:last-of-type {
+        margin-top: 30px;
+    }
+
+    .left h1 {
+        font-size: 26px;
+    }
+
+    .left p {
+        font-size: 14px;
+    }
+
+    .main section {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .box {
+        height: 300px;
+    }
+
+    .main form {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    form p {
+        margin-top: 100px;
+    }
+
+    .formDiv {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 4em;
+        border-radius: 10px;
+        border: 2px solid #fff;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .small {
+        display: block;
+    }
+
+    .large {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav i {
+        font-size: 26px !important;
+    }
+
+    .left h1 {
+        font-size: 26px;
+    }
+
+    .left p {
+        font-size: 14px;
+    }
+
+    .main section {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .box {
+        height: 300px;
+    }
+
+    .main form {
+        font-size: 14px;
+    }
+
+    form p {
+        margin-top: 70px;
+    }
+
+    .formDiv {
+        padding: 2em;
+        border-radius: 10px;
+        width: 500px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .formDiv {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 14px;
+    }
+
+    .brand {
+        font-size: 10px;
+    }
+
+    .move {
+        font-size: 16px;
+    }
+
+    .left h1 {
+        font-size: 26px;
+    }
+
+    .left p {
+        font-size: 14px;
+    }
+
+    .main section {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .box {
+        height: 200px;
+    }
+
+    .main form {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .formDiv {
+        width: 100%;
+    }
+}
